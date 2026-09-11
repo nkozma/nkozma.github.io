@@ -1,10 +1,350 @@
-<!doctype html><html lang='ru'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Никита Козьма — Technical QA Engineer</title><style>
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui;background:#0B1220;color:#E5E7EB}
-.hero{background:linear-gradient(135deg,#0F172A,#2563EB);padding:72px 24px}.c{max-width:1150px;margin:auto}
-h1{font-size:56px;margin:0}.sub{font-size:24px;color:#DBEAFE}.btn{display:inline-block;background:white;color:#0F172A;padding:14px 22px;border-radius:14px;text-decoration:none;font-weight:700;margin-top:18px}
-.panel{display:grid;grid-template-columns:280px 1fr;gap:28px;padding:40px 24px}@media(max-width:800px){.panel{grid-template-columns:1fr}}
-.side,.main{background:#111827;border:1px solid #1E293B;border-radius:24px;padding:28px}
-h2{color:#60A5FA;margin-top:0}.metric{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:14px;margin:28px 0}.m{background:#111827;border:1px solid #334155;border-radius:18px;padding:20px;text-align:center}.m b{font-size:30px;color:#60A5FA;display:block}
-.timeline{border-left:2px solid #334155;padding-left:22px}.item{position:relative;margin:26px 0}.item:before{content:'';position:absolute;left:-30px;top:8px;width:14px;height:14px;background:#2563EB;border-radius:50%}
-.badge{display:inline-block;background:#1E293B;padding:8px 12px;border-radius:999px;margin:5px;font-size:14px}
-</style></head><body><section class='hero'><div class='c'><h1>Никита Андреевич Козьма</h1><div class='sub'>Technical QA Engineer (Developer Tools & Engine QA)</div><p>Тольятти • Удалённая работа • Готов к переезду</p><a class='btn' href='Nikita_Kozma_Technical_QA_Engineer_Figma_Style.pdf'>Скачать PDF</a></div></section><div class='c'><div class='metric'><div class='m'><b>3+</b>года опыта</div><div class='m'><b>AAA</b>Space Marine 2</div><div class='m'><b>≈60%</b>ускорение документации</div><div class='m'><b>B2</b>английский</div></div><div class='panel'><aside class='side'><h2>Навыки</h2><span class='badge'>Unity</span><span class='badge'>Developer Tools</span><span class='badge'>Engine QA</span><span class='badge'>Microsoft PIX</span><span class='badge'>Python</span><span class='badge'>C#</span><span class='badge'>SQL</span><span class='badge'>OpenCV</span><span class='badge'>Swagger</span><span class='badge'>Perforce</span><span class='badge'>Git</span><span class='badge'>TestRail</span><span class='badge'>Jira</span><span class='badge'>Confluence</span><h2 style='margin-top:26px'>Образование</h2><p><b>Бизнес-информатика</b><br>Государственный институт экономики, финансов, права и технологий</p></aside><main class='main'><h2>О себе</h2><p>Technical QA Engineer с опытом работы над AAA-, мобильными и VR-проектами. Специализируюсь на Developer Tools, Engine QA, производительности и технических системах разработки игр.</p><h2>Карьерный путь</h2><div class='timeline'><div class='item'><h3>Last Level — Technical QA Engineer</h3><p>LiveOps • Bundles • CDN • Swagger • AI TestRail</p></div><div class='item'><h3>Last Level — QA Engineer</h3><p>Sky Combat 2 • Android/iOS</p></div><div class='item'><h3>SPL — Technical QA Engineer</h3><p>Space Marine 2 • PIX • OpenCV</p></div><div class='item'><h3>SPL — Unity C# Intern</h3></div><div class='item'><h3>SPL — QA Engineer</h3><p>World War Z VR • Unity QA Scene</p></div></div></main></div></div></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Никита Козьма — Technical QA Engineer</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0B1220;
+            --panel: #111827;
+            --panel-border: #1E293B;
+            --text: #E5E7EB;
+            --muted: #94A3B8;
+            --accent: #2563EB;
+            --accent-light: #60A5FA;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero */
+
+        .hero {
+            background: linear-gradient(135deg, #0F172A, #2563EB);
+            padding: 72px 0;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: clamp(38px, 6vw, 56px);
+        }
+
+        .subtitle {
+            margin-top: 10px;
+            font-size: 24px;
+            color: #DBEAFE;
+        }
+
+        .location {
+            color: #BFDBFE;
+        }
+
+        /* Contacts */
+
+        .contacts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 24px;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .contact:hover {
+            opacity: .85;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 22px;
+            background: white;
+            color: #111827;
+            text-decoration: none;
+            border-radius: 14px;
+            font-weight: 700;
+        }
+
+        /* Metrics */
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+            margin: 40px 0;
+        }
+
+        .metric {
+            background: var(--panel);
+            border: 1px solid var(--panel-border);
+            border-radius: 18px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .metric strong {
+            display: block;
+            font-size: 30px;
+            color: var(--accent-light);
+        }
+
+        /* Layout */
+
+        .layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 28px;
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 900px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        aside,
+        main {
+            background: var(--panel);
+            border: 1px solid var(--panel-border);
+            border-radius: 24px;
+            padding: 28px;
+        }
+
+        h2 {
+            color: var(--accent-light);
+            margin-top: 0;
+        }
+
+        /* Skills */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .badge {
+            background: #1E293B;
+            border: 1px solid #334155;
+            border-radius: 999px;
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+
+        /* Timeline */
+
+        .timeline {
+            border-left: 2px solid #334155;
+            padding-left: 24px;
+        }
+
+        .job {
+            position: relative;
+            margin-bottom: 28px;
+        }
+
+        .job::before {
+            content: "";
+            position: absolute;
+            left: -31px;
+            top: 8px;
+            width: 14px;
+            height: 14px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .job small {
+            color: var(--muted);
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            color: var(--muted);
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="container">
+
+        <h1>Никита Андреевич Козьма</h1>
+
+        <div class="subtitle">
+            Technical QA Engineer (Developer Tools & Engine QA)
+        </div>
+
+        <p class="location">
+            📍 Тольятти • Удалённая работа • Готов к переезду
+        </p>
+
+        <div class="contacts">
+            <a class="contact" href="mailto:nkozma@ro.ru">
+                ✉️ nkozma@ro.ru
+            </a>
+
+            <a class="contact" href="https://t.me/n_kozma">
+                💬 @n_kozma
+            </a>
+
+            <a class="contact" href="https://github.com/nkozma">
+                💻 github.com/nkozma
+            </a>
+
+            <a class="contact" href="https://www.linkedin.com/in/nkozma/">
+                🔗 linkedin.com/in/nkozma
+            </a>
+        </div>
+
+        <a class="button" href="Nikita_Kozma_Technical_QA_Engineer_Figma_Style.pdf">
+            Скачать PDF
+        </a>
+
+    </div>
+</header>
+
+    <div class="container">
+
+        <section class="metrics">
+
+            <div class="metric">
+                <strong>3+</strong>
+                года опыта
+            </div>
+
+            <div class="metric">
+                <strong>AAA</strong>
+                Space Marine 2
+            </div>
+
+            <div class="metric">
+                <strong>≈60%</strong>
+                ускорение документации
+            </div>
+
+            <div class="metric">
+                <strong>B2</strong>
+                английский
+            </div>
+
+        </section>
+
+        <div class="layout">
+
+            <aside>
+
+                <h2>Навыки</h2>
+
+                <div class="skills">
+                    <span class="badge">Unity</span>
+                    <span class="badge">Developer Tools</span>
+                    <span class="badge">Engine QA</span>
+                    <span class="badge">Microsoft PIX</span>
+                    <span class="badge">Python</span>
+                    <span class="badge">C#</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">OpenCV</span>
+                    <span class="badge">Swagger</span>
+                    <span class="badge">Perforce</span>
+                    <span class="badge">Git</span>
+                    <span class="badge">Jira</span>
+                    <span class="badge">TestRail</span>
+                    <span class="badge">Confluence</span>
+                </div>
+
+                <h2 style="margin-top:30px;">Образование</h2>
+
+                <p>
+                    <strong>Бизнес-информатика</strong><br>
+                    Государственный институт экономики, финансов, права и технологий
+                </p>
+
+            </aside>
+
+            <main>
+
+                <h2>О себе</h2>
+
+                <p>
+                    Technical QA Engineer с опытом работы над AAA-, мобильными
+                    и VR-проектами. Специализируюсь на Developer Tools,
+                    Engine QA, производительности и технических системах разработки игр.
+                </p>
+
+                <h2>Карьерный путь</h2>
+
+                <div class="timeline">
+
+                    <div class="job">
+                        <h3>Last Level — Technical QA Engineer</h3>
+                        <small>2026 — настоящее время</small>
+                        <p>LiveOps • Bundles • CDN • Swagger • AI TestRail</p>
+                    </div>
+
+                    <div class="job">
+                        <h3>Last Level — QA Engineer</h3>
+                        <small>2025 — 2026</small>
+                        <p>Sky Combat 2 • Android/iOS</p>
+                    </div>
+
+                    <div class="job">
+                        <h3>SPL — Technical QA Engineer</h3>
+                        <small>2024 — 2025</small>
+                        <p>Space Marine 2 • Microsoft PIX • OpenCV</p>
+                    </div>
+
+                    <div class="job">
+                        <h3>SPL — Unity C# Intern</h3>
+                        <small>2023</small>
+                    </div>
+
+                    <div class="job">
+                        <h3>SPL — QA Engineer</h3>
+                        <small>2023</small>
+                        <p>World War Z VR • Unity QA Scene</p>
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © Никита Козьма • Technical QA Engineer
+    </footer>
+
+</body>
+</html>
